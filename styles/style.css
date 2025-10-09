@@ -99,7 +99,7 @@ header .title{
 .hero-text{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     gap: 0.4rem;
 }
 
@@ -317,6 +317,11 @@ header .title{
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+}
+
+.services a{
+    display: flex;
+    justify-content: center;
 }
 
 .service{
