@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #F8F9FA;
+    --bg-secondary: #E2E8F0;
+    --bg-card: #FFFFFF;
+    --accent: #4361EE;
+    --accent-hover: #3451D1;
+    --accent-light: rgba(67, 97, 238, 0.10);
+    --text-primary: #0F172A;
+    --text-muted: #64748B;
+    --border: rgba(0, 0, 0, 0.08);
+    --success: #1D9E75;
+  }
+  
+  .dark {
+    --bg-primary: #0D0D1A;
+    --bg-secondary: #13132A;
+    --bg-card: #1A1A35;
+    --accent: #4361EE;
+    --accent-hover: #3451D1;
+    --accent-light: rgba(67, 97, 238, 0.10);
+    --text-primary: #F8F9FA;
+    --text-muted: #94A3B8;
+    --border: rgba(255, 255, 255, 0.08);
+    --success: #1D9E75;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary;
+  }
+}
